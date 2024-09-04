@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreativeWeb Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Creative<span class="up-arrow">▲</span>Web</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contactus">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Unlock Your Business Potential With Web Design</h1>
+                <p>Your one-stop solution for creating stunning, high-performance websites.</p>
+                <button class="cta-button" id="workWithUsBtn">Work With Us</button>
+            </div>
+            <div class="hero-image">
+                <img src="logo.jpg" alt="Web Design Illustration" width="150px" height="200px">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="service" class="info-section">
+        <div class="container">
+            <div class="info-block">
+                <h2>Our Services</h2>
+                <div class="info-box">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Web Design Experts</p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-check-circle"></i>
+                    <p>SEO Optimization</p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-check-circle"></i>
+                    <p>E-commerce Solutions</p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Custom Development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="aboutus" class="info-section">
+        <div class="container">
+            <div class="info-block">
+                <h2>About Us</h2>
+                <p>We are a creative web design agency dedicated to helping businesses reach their full potential online.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="info-section">
+        <div class="container">
+            <div class="info-block">
+                <h2>What Our Clients Say</h2>
+                <div class="testimonial-box">
+                    <p>"CreativeWeb transformed our online presence and helped us reach new heights."</p>
+                    <p>- Client A</p>
+                </div>
+                <div class="testimonial-box">
+                    <p>"Their team is outstanding in delivering top-notch web solutions."</p>
+                    <p>- Client B</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contactus" class="info-section">
+        <div class="container">
+            <div class="info-block">
+                <h2>Contact Us</h2>
+                <p>We’d love to hear from you! Get in touch with us today.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> info@creativeweb.com</p>
+                    <p><i class="fas fa-phone-alt"></i> +123 456 7890</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CreativeWeb Design. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<style>/* General Styles */
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #fff;
+        line-height: 1.6;
+        background-color: #1a1f36;
+    }
+    
+    header {
+        background-color: #10142a;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    header .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo h1 {
+        color: #fff;
+        font-size: 2rem;
+    }
+    
+    .logo .up-arrow {
+        color: #00f5c7;
+        font-size: 1.5rem;
+        transform: translateY(-10%);
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin-left: 20px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        font-weight: 600;
+        padding: 10px 20px;
+        border-radius: 25px;
+        transition: background-color 0.3s, color 0.3s;
+        text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+        background-color: #00f5c7;
+        color: #10142a;
+    }
+    
+    /* Hero Section */
+    .hero {
+        background: linear-gradient(135deg, #0b0f29 0%, #182554 100%);
+        padding: 150px 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .hero-text {
+        max-width: 500px;
+        text-align: left;
+    }
+    
+    .hero-text h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        font-weight: 600;
+        color: #fff;
+    }
+    
+    .hero-text p {
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+        color: #ccc;
+    }
+    
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Info Section */
+    .info-section {
+        padding: 50px 20px;
+        background-color: #10142a;
+        text-align: center;
+    }
+    
+    .info-section .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .info-block {
+        flex-basis: 48%;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    
+    .info-block h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .info-block p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        color: #ccc;
+    }
+    
+    .info-box {
+        background-color: #1e2347;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        transition: transform 0.3s;
+    }
+    
+    .info-box i {
+        font-size: 2rem;
+        color: #00f5c7;
+        margin-right: 15px;
+    }
+    
+    .info-box p {
+        font-size: 1.2rem;
+        color: #fff;
+    }
+    
+    .info-box:hover {
+        transform: translateY(-10px);
+    }
+    
+    /* Social Icons */
+    .social-icons {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+    
+    .social-icons a {
+        color: #00f5c7;
+        font-size: 1.5rem;
+        margin-right: 15px;}
+    </style>
